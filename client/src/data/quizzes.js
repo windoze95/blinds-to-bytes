@@ -2771,245 +2771,6 @@ export const quizzes = [
       {
         question: "What is a 'no-code' AI platform?",
         options: [
-          "Trains people how to use AI tools",
-          "Labels data, evaluates AI outputs, and provides human feedback to improve AI models — they teach the AI by example",
-          "Physically trains robots to move",
-          "Programs AI algorithms from scratch"
-        ],
-        correctAnswer: 1,
-        explanation: "AI Trainers label data and evaluate AI outputs — they're the human teachers that AI learns from. When you see RLHF (Reinforcement Learning from Human Feedback), it's AI Trainers providing that feedback. It's one of the most accessible entry points into AI careers.",
-        blindsAnalogy: "An AI Trainer is like a master installer training apprentices by showing them hundreds of completed jobs and saying, 'This is good work, this is bad work, and here's why.' Except the 'apprentice' is an AI model, and the 'showing' is labeling data and rating AI outputs."
-      },
-      {
-        question: "What does a 'Prompt Engineer' do?",
-        options: [
-          "Engineers the physical prompts on computer screens",
-          "Designs, tests, and optimizes the instructions given to AI systems to produce the best possible outputs for specific business needs",
-          "Writes code for AI models",
-          "Manages AI computing infrastructure"
-        ],
-        correctAnswer: 1,
-        explanation: "Prompt Engineers craft the instructions that get the best results from AI. They build prompt libraries, test systematically, optimize for consistency, and design the AI's personality and behavior through prompts. Pay range: $60-120K+.",
-        blindsAnalogy: "A Prompt Engineer is like the person who writes the perfect work order templates — the ones that give installers exactly the information they need, in the right format, to get the job right the first time. They don't install blinds and they don't manufacture them — they design the communication that makes everything else work."
-      },
-      {
-        question: "What does an 'AI Operations Specialist' do?",
-        options: [
-          "Operates AI robots in a factory",
-          "Manages AI systems in production — monitoring performance, handling failures, managing updates, and ensuring reliable operation",
-          "Designs new AI algorithms",
-          "Sells AI products to customers"
-        ],
-        correctAnswer: 1,
-        explanation: "AI Ops specialists keep AI systems running in production: monitoring for performance degradation, managing model updates, handling errors, ensuring uptime, and coordinating between data scientists and IT. Pay range: $60-100K+.",
-        blindsAnalogy: "An AI Ops Specialist is like a maintenance manager for a large commercial installation: they monitor that all the motorized blinds are working correctly, troubleshoot failures, coordinate firmware updates, manage the scheduling system, and keep everything operational day to day."
-      },
-      {
-        question: "What does an 'AI Solutions Consultant' do?",
-        options: [
-          "Solves crossword puzzles using AI",
-          "Helps businesses identify where AI can add value, scopes AI projects, recommends solutions, and manages implementations",
-          "Consults with AI to get its opinions",
-          "Only works at AI technology companies"
-        ],
-        correctAnswer: 1,
-        explanation: "AI Solutions Consultants are the bridge between business problems and AI solutions. They assess company needs, identify AI opportunities, recommend approaches, and guide implementation. Strong communication and business skills are more important than coding. Pay range: $70-130K+.",
-        blindsAnalogy: "An AI Solutions Consultant is like a window treatment consultant who visits a client's space, assesses their needs (light control, privacy, aesthetics, budget), and recommends the right solution. They don't manufacture the blinds or install them — they understand both the client's needs and the product capabilities, and they match them up."
-      },
-      {
-        question: "What makes a non-traditional background (like trades work) actually valuable for AI careers?",
-        options: [
-          "Nothing — you need a computer science degree for any AI role",
-          "Real-world problem-solving, customer communication, attention to detail, process optimization, and the ability to explain technical concepts in plain language",
-          "Only the physical fitness from trade work",
-          "Trades experience is only useful for manual AI tasks"
-        ],
-        correctAnswer: 1,
-        explanation: "Trades professionals bring critical skills: problem-solving under pressure, communicating technical info to non-technical customers, attention to detail, process efficiency, quality assessment, and practical common sense. These are exactly what AI companies need in roles that bridge technology and humans.",
-        blindsAnalogy: "You already explain technical options to customers in plain English every day — 'Here's why inside mount won't work for this window.' You troubleshoot problems on-site with limited information. You assess quality and know when something's 'good enough' vs. needs rework. These are the exact skills AI companies struggle to find in candidates who only have academic backgrounds."
-      },
-      {
-        question: "What is a 'Conversational AI Designer'?",
-        options: [
-          "Someone who has conversations with AI all day",
-          "A role focused on designing chatbot dialogue flows, writing conversation scripts, and testing the quality of AI conversations to create natural, helpful user experiences",
-          "An AI that designs conversations between humans",
-          "A graphic designer who uses AI tools"
-        ],
-        correctAnswer: 1,
-        explanation: "Conversational AI Designers create the user experience of chatbots and voice assistants: how the bot greets users, handles questions, manages errors gracefully, and maintains a consistent personality. They design conversation flows, write dialogue, and test extensively. Pay range: $55-95K+.",
-        blindsAnalogy: "A Conversational AI Designer is like the person who writes the customer interaction scripts and processes for a blind company: how the call center greets callers, what questions to ask in what order, how to handle complaints, and how to make the whole experience feel smooth and professional."
-      },
-      {
-        question: "What does an 'AI Product Analyst' do?",
-        options: [
-          "Analyzes how AI was used in movies and TV",
-          "Analyzes AI product performance, user behavior, defines feature requirements, and helps improve AI products based on data and user feedback",
-          "Analyzes the physical components of AI hardware",
-          "Only works on analyzing competitor AI products"
-        ],
-        correctAnswer: 1,
-        explanation: "AI Product Analysts use data to understand how AI products perform and how users interact with them. They identify what's working, what isn't, and what needs to change. They help product teams make data-driven decisions about AI features. Pay range: $65-110K+.",
-        blindsAnalogy: "An AI Product Analyst is like someone who reviews completed installations across the company: Which products had the most callbacks? Where are customers most satisfied? Which install processes take longest? They use data to improve the product and process."
-      },
-      {
-        question: "What is the salary range for an AI Ethics/Safety Analyst?",
-        options: [
-          "$25,000-40,000",
-          "$70,000-120,000+",
-          "$200,000-500,000",
-          "These roles are volunteer-only"
-        ],
-        correctAnswer: 1,
-        explanation: "AI Ethics/Safety Analysts evaluate AI systems for bias, safety, and compliance. The pay range is approximately $70-120K+, reflecting the growing importance of responsible AI practices and increasing regulatory requirements.",
-        blindsAnalogy: "AI Ethics/Safety Analysts are like the building code inspectors of the AI world — they review systems against standards, flag potential issues, and require fixes before deployment. As AI regulations increase (like the EU AI Act), these roles become more important and better compensated."
-      },
-      {
-        question: "Which AI role is often considered the most accessible entry point for someone switching careers?",
-        options: [
-          "AI Research Scientist",
-          "AI Trainer / Data Annotator — it requires attention to detail and domain knowledge rather than programming skills",
-          "Machine Learning Engineer",
-          "Chief AI Officer"
-        ],
-        correctAnswer: 1,
-        explanation: "AI Trainer / Data Annotator roles value domain expertise, attention to detail, and the ability to make quality judgments — skills that directly transfer from trades work. Many positions don't require a technical degree. Pay range: $40-80K+ with room to grow into senior roles.",
-        blindsAnalogy: "Starting as an AI Trainer is like how many installers started — as a helper on a crew, learning by doing, building expertise through hands-on work rather than classroom theory. You use your existing skills (attention to detail, quality judgment) while learning the AI domain."
-      },
-      {
-        question: "What skills should someone develop to prepare for AI career roles?",
-        options: [
-          "Only advanced programming in Python and C++",
-          "A combination of AI literacy, data literacy, communication skills, critical thinking, domain expertise, and familiarity with AI tools — coding is helpful but not always required",
-          "Only sales and marketing skills",
-          "Nothing — the AI will train you"
-        ],
-        correctAnswer: 1,
-        explanation: "A well-rounded AI career preparation includes: understanding how AI works (literacy, not engineering), data skills (understanding data quality, bias, datasets), communication (explaining technical concepts simply), critical thinking (evaluating AI outputs), and hands-on familiarity with AI tools.",
-        blindsAnalogy: "Preparing for an AI career is like how you became a skilled installer: you needed product knowledge, measurement skills, customer communication, problem-solving ability, and hands-on experience with the tools. You didn't need to become a window manufacturer — you needed to be an expert user and communicator."
-      },
-      {
-        question: "What is 'AI Quality Assurance'?",
-        options: [
-          "Making sure AI hardware passes manufacturing quality checks",
-          "Testing AI outputs for accuracy, consistency, safety, and reliability — ensuring the AI produces trustworthy results before and after deployment",
-          "A certification program for AI products",
-          "Quality control for AI training data only"
-        ],
-        correctAnswer: 1,
-        explanation: "AI QA specialists test AI systems the way QA testers test software: Does the AI give accurate answers? Is it consistent? Does it handle edge cases? Does it ever produce harmful content? They design test cases, track quality metrics, and flag problems. Pay range: $50-90K+.",
-        blindsAnalogy: "AI QA is like your final quality check on every installation: Are the blinds level? Do they operate smoothly? Is the spacing even? Does anything stick or bind? Do the motorized ones respond to the remote consistently? The QA specialist checks that the AI's 'installations' meet quality standards."
-      },
-      {
-        question: "How do you explain your non-traditional background as a strength in an AI job interview?",
-        options: [
-          "Don't mention it — pretend you have a tech background",
-          "Frame your trade experience as directly relevant: precision, customer communication, troubleshooting, quality assessment, and real-world problem-solving are exactly what AI teams need",
-          "Say you're still learning and probably underqualified",
-          "Only talk about your desire to change careers"
-        ],
-        correctAnswer: 1,
-        explanation: "Your trade experience is a genuine asset: you solve problems under pressure, communicate technical concepts to non-technical people, maintain quality standards, assess edge cases, and iterate until things work. These skills are harder to teach than AI tools — and AI companies know it.",
-        blindsAnalogy: "You'd frame it the same way you'd pitch to a commercial client: 'I bring 10 years of field experience solving real problems in real time. I can assess quality, communicate with anyone from a building manager to a tenant, and I know that the gap between theory and reality is where the real work happens. AI teams have plenty of people who understand the theory — they need people who understand the gap.'"
-      },
-      {
-        question: "What is a 'portfolio' in the context of applying for AI roles?",
-        options: [
-          "A financial investment portfolio",
-          "A collection of work samples demonstrating your AI skills — projects, analyses, certifications, and examples of AI tools you've used and what you accomplished with them",
-          "A physical folder of printed resumes",
-          "A portfolio is only needed for design roles"
-        ],
-        correctAnswer: 1,
-        explanation: "An AI portfolio shows what you can do: examples of prompt engineering, AI tool comparisons, data analysis projects, scenario analyses, certifications completed, and any AI solutions you've built or contributed to. It's proof of capability, not just claimed experience.",
-        blindsAnalogy: "An AI portfolio is like your project portfolio for landing commercial contracts: photos of completed work, client testimonials, certifications, and descriptions of complex projects you've handled. You don't just say you can do the job — you show evidence that you have."
-      },
-      {
-        question: "Which AI certifications are considered most valuable for non-technical roles?",
-        options: [
-          "Only PhDs in machine learning count",
-          "Practical certifications that demonstrate AI literacy and tool proficiency — such as Google's AI Essentials, AWS AI Practitioner, or Coursera AI specializations",
-          "No certifications exist for non-technical AI roles",
-          "Only vendor-specific certifications from OpenAI"
-        ],
-        correctAnswer: 1,
-        explanation: "Certifications from Google, AWS, IBM, Microsoft, and platforms like Coursera, edX, and DeepLearning.AI demonstrate AI literacy without requiring engineering depth. Focus on practical, industry-recognized certifications that show you understand AI concepts and can use AI tools.",
-        blindsAnalogy: "Choosing the right AI certifications is like choosing trade certifications: a general contractor license opens more doors than a single manufacturer's installation certificate. Get broad industry-recognized credentials first, then specialize based on the roles you're targeting."
-      },
-      {
-        question: "What is the job market outlook for non-engineering AI roles?",
-        options: [
-          "These roles are shrinking as AI becomes more automated",
-          "Growing rapidly — companies are realizing they need people who understand AI AND can communicate with non-technical stakeholders, creating strong demand for hybrid skill sets",
-          "The market is completely saturated",
-          "Only big tech companies hire for these roles"
-        ],
-        correctAnswer: 1,
-        explanation: "Non-engineering AI roles are among the fastest-growing job categories. As AI adoption increases, companies need trainers, prompt engineers, ethics analysts, QA testers, consultants, and product analysts. The technical side is only half the equation — the human side is equally critical.",
-        blindsAnalogy: "The AI job market is like the blind industry when motorized systems took off: suddenly you needed people who understood both the traditional craft AND the new technology, who could explain it to customers, troubleshoot the integration, and manage the transition. The people with hybrid skills were the most valuable."
-      },
-      {
-        question: "A company posts a job for 'AI Operations Specialist' requiring '2+ years experience with ML pipelines.' You have 0 years in AI but 10 years installing blinds. Should you apply?",
-        options: [
-          "No — you must meet every listed requirement exactly",
-          "Yes — job postings are wish lists, and your transferable skills (operations management, troubleshooting, quality control, customer communication) are genuinely valuable. Apply with a strong cover letter bridging your experience to their needs.",
-          "Only if you lie about having ML pipeline experience",
-          "No — career switching is impossible"
-        ],
-        correctAnswer: 1,
-        explanation: "Job postings list ideal candidates, not minimum requirements. Your operations experience (managing installs, troubleshooting systems, quality assurance, customer-facing work) directly transfers. A strong application that honestly bridges your experience to their needs can stand out from generic AI applicants.",
-        blindsAnalogy: "This is like bidding on a commercial job that asks for 'experience with automated blind systems.' You may not have installed that exact system, but your decade of installation experience, understanding of mounting systems, and ability to learn new products makes you a stronger candidate than someone who read about motorized blinds but never held a drill."
-      },
-      {
-        question: "What is the single most important thing for transitioning into an AI career from a non-technical background?",
-        options: [
-          "Getting a 4-year computer science degree",
-          "Memorizing every AI algorithm",
-          "Building genuine AI literacy through self-study, hands-on practice with AI tools, and creating a portfolio that demonstrates your understanding and capabilities",
-          "Waiting for someone to offer you a role"
-        ],
-        correctAnswer: 2,
-        explanation: "Active self-education is the key: study AI concepts (this course!), practice with AI tools, build projects that demonstrate your skills, earn relevant certifications, and network in AI communities. Nobody will hand you a career change — but the path is absolutely accessible for self-starters.",
-        blindsAnalogy: "Transitioning to AI is like how you probably learned the blind trade: you didn't wait for a university degree — you learned on the job, studied on your own, got certified, and built your reputation through demonstrated skill. The AI career path works the same way for self-motivated learners."
-      },
-      {
-        question: "How should you position window blind installation experience on an AI-focused resume?",
-        options: [
-          "Don't mention it — hide your trade background",
-          "Translate specific skills into AI-relevant language: 'precision measurement and quality assurance,' 'client needs assessment and technical communication,' 'field operations and process optimization'",
-          "List every blind you've ever installed",
-          "Only mention it as a hobby"
-        ],
-        correctAnswer: 1,
-        explanation: "Translate your experience into business/AI language: 'Conducted 5,000+ precision measurement and quality assessments,' 'Managed client technical consultations translating requirements into specifications,' 'Optimized field operations processes reducing installation time by 25%.' The skills are real — frame them professionally.",
-        blindsAnalogy: "It's the same principle as when you bid on commercial jobs: you don't say 'I put up blinds in houses.' You say 'Managed residential and commercial window treatment installations, including motorized systems, coordinating with general contractors, building management, and end users.' Same experience, professional framing."
-      },
-      {
-        question: "What is the most common mistake people make when trying to break into AI careers?",
-        options: [
-          "Starting too early",
-          "Focusing only on technical skills (trying to learn programming) while ignoring the communication, business, and domain expertise skills that non-engineering AI roles actually need",
-          "Applying to too many jobs",
-          "Being too confident in interviews"
-        ],
-        correctAnswer: 1,
-        explanation: "The biggest mistake is thinking you need to become an engineer. Many AI roles need people who can communicate, evaluate, test, train, consult, and manage — not code. Invest in understanding AI deeply and developing the human skills that make you valuable, rather than spending years trying to become a developer.",
-        blindsAnalogy: "It's like a skilled installer thinking they need an engineering degree to become a sales consultant for a blind manufacturer. They don't — they need to understand the products, communicate with customers and architects, and solve problems. Their field experience is more valuable than an engineering degree for that role."
-      }
-    ]
-  },
-
-  // ============================================================
-  // SECTION 12: Building AI Solutions
-  // ============================================================
-  {
-    id: "quiz-section-12",
-    section: 12,
-    title: "Building AI Solutions",
-    questions: [
-      {
-        question: "What is a 'no-code' AI platform?",
-        options: [
           "An AI platform that doesn't work because it has no code",
           "A platform that lets you build AI-powered applications through visual interfaces, drag-and-drop builders, and configuration — without writing programming code",
           "A free platform that costs nothing to use",
@@ -3234,6 +2995,257 @@ export const quizzes = [
         correctAnswer: 2,
         explanation: "When a RAG-based chatbot gives wrong answers, the first place to check is the knowledge base it's referencing. Is the product catalog up to date? Are descriptions accurate? Is pricing current? The AI can only be as accurate as the data it retrieves.",
         blindsAnalogy: "If an installer keeps showing up with the wrong products, you don't blame the installer first — you check the work orders and the ordering system. Are the specs right? Is the catalog current? Is the inventory system accurate? Bad outputs trace back to bad inputs, whether it's a person or an AI."
+      },
+      {
+        question: "What is an MVP (Minimum Viable Product) in the context of building an AI solution?",
+        options: [
+          "The most valuable programmer on the team",
+          "The simplest version of your AI solution that delivers core value — built quickly to test whether the idea works before investing in a full build",
+          "A product that has every possible feature from day one",
+          "A marketing term with no practical meaning"
+        ],
+        correctAnswer: 1,
+        explanation: "An MVP is the smallest, simplest version of your AI product that still solves the core problem. Build it fast, test it with real users, learn what works and what doesn't, then iterate. This avoids spending months building something nobody wants.",
+        blindsAnalogy: "An MVP is like doing a single sample installation before committing to a 200-unit commercial project. You install one window, check the fit, verify the operation, get the client's feedback, and adjust your approach before scaling up. It's cheaper to fix one blind than to redo two hundred."
+      }
+    ]
+  },
+
+  // ============================================================
+  // SECTION 13: AI Career Paths
+  // ============================================================
+  {
+    id: "quiz-section-13",
+    section: 13,
+    title: "AI Career Paths",
+    questions: [
+      {
+        question: "What does an 'AI Trainer' / 'Data Annotator' do?",
+        options: [
+          "Trains people how to use AI tools",
+          "Labels data, evaluates AI outputs, and provides human feedback to improve AI models — they teach the AI by example",
+          "Physically trains robots to move",
+          "Programs AI algorithms from scratch"
+        ],
+        correctAnswer: 1,
+        explanation: "AI Trainers label data and evaluate AI outputs — they're the human teachers that AI learns from. When you see RLHF (Reinforcement Learning from Human Feedback), it's AI Trainers providing that feedback. It's one of the most accessible entry points into AI careers.",
+        blindsAnalogy: "An AI Trainer is like a master installer training apprentices by showing them hundreds of completed jobs and saying, 'This is good work, this is bad work, and here's why.' Except the 'apprentice' is an AI model, and the 'showing' is labeling data and rating AI outputs."
+      },
+      {
+        question: "What does a 'Prompt Engineer' do?",
+        options: [
+          "Engineers the physical prompts on computer screens",
+          "Designs, tests, and optimizes the instructions given to AI systems to produce the best possible outputs for specific business needs",
+          "Writes code for AI models",
+          "Manages AI computing infrastructure"
+        ],
+        correctAnswer: 1,
+        explanation: "Prompt Engineers craft the instructions that get the best results from AI. They build prompt libraries, test systematically, optimize for consistency, and design the AI's personality and behavior through prompts. Pay range: $60-120K+.",
+        blindsAnalogy: "A Prompt Engineer is like the person who writes the perfect work order templates — the ones that give installers exactly the information they need, in the right format, to get the job right the first time. They don't install blinds and they don't manufacture them — they design the communication that makes everything else work."
+      },
+      {
+        question: "What does an 'AI Operations Specialist' do?",
+        options: [
+          "Operates AI robots in a factory",
+          "Manages AI systems in production — monitoring performance, handling failures, managing updates, and ensuring reliable operation",
+          "Designs new AI algorithms",
+          "Sells AI products to customers"
+        ],
+        correctAnswer: 1,
+        explanation: "AI Ops specialists keep AI systems running in production: monitoring for performance degradation, managing model updates, handling errors, ensuring uptime, and coordinating between data scientists and IT. Pay range: $60-100K+.",
+        blindsAnalogy: "An AI Ops Specialist is like a maintenance manager for a large commercial installation: they monitor that all the motorized blinds are working correctly, troubleshoot failures, coordinate firmware updates, manage the scheduling system, and keep everything operational day to day."
+      },
+      {
+        question: "What does an 'AI Solutions Consultant' do?",
+        options: [
+          "Solves crossword puzzles using AI",
+          "Helps businesses identify where AI can add value, scopes AI projects, recommends solutions, and manages implementations",
+          "Consults with AI to get its opinions",
+          "Only works at AI technology companies"
+        ],
+        correctAnswer: 1,
+        explanation: "AI Solutions Consultants are the bridge between business problems and AI solutions. They assess company needs, identify AI opportunities, recommend approaches, and guide implementation. Strong communication and business skills are more important than coding. Pay range: $70-130K+.",
+        blindsAnalogy: "An AI Solutions Consultant is like a window treatment consultant who visits a client's space, assesses their needs (light control, privacy, aesthetics, budget), and recommends the right solution. They don't manufacture the blinds or install them — they understand both the client's needs and the product capabilities, and they match them up."
+      },
+      {
+        question: "What makes a non-traditional background (like trades work) actually valuable for AI careers?",
+        options: [
+          "Nothing — you need a computer science degree for any AI role",
+          "Real-world problem-solving, customer communication, attention to detail, process optimization, and the ability to explain technical concepts in plain language",
+          "Only the physical fitness from trade work",
+          "Trades experience is only useful for manual AI tasks"
+        ],
+        correctAnswer: 1,
+        explanation: "Trades professionals bring critical skills: problem-solving under pressure, communicating technical info to non-technical customers, attention to detail, process efficiency, quality assessment, and practical common sense. These are exactly what AI companies need in roles that bridge technology and humans.",
+        blindsAnalogy: "You already explain technical options to customers in plain English every day — 'Here's why inside mount won't work for this window.' You troubleshoot problems on-site with limited information. You assess quality and know when something's 'good enough' vs. needs rework. These are the exact skills AI companies struggle to find in candidates who only have academic backgrounds."
+      },
+      {
+        question: "What is a 'Conversational AI Designer'?",
+        options: [
+          "Someone who has conversations with AI all day",
+          "A role focused on designing chatbot dialogue flows, writing conversation scripts, and testing the quality of AI conversations to create natural, helpful user experiences",
+          "An AI that designs conversations between humans",
+          "A graphic designer who uses AI tools"
+        ],
+        correctAnswer: 1,
+        explanation: "Conversational AI Designers create the user experience of chatbots and voice assistants: how the bot greets users, handles questions, manages errors gracefully, and maintains a consistent personality. They design conversation flows, write dialogue, and test extensively. Pay range: $55-95K+.",
+        blindsAnalogy: "A Conversational AI Designer is like the person who writes the customer interaction scripts and processes for a blind company: how the call center greets callers, what questions to ask in what order, how to handle complaints, and how to make the whole experience feel smooth and professional."
+      },
+      {
+        question: "What does an 'AI Product Analyst' do?",
+        options: [
+          "Analyzes how AI was used in movies and TV",
+          "Analyzes AI product performance, user behavior, defines feature requirements, and helps improve AI products based on data and user feedback",
+          "Analyzes the physical components of AI hardware",
+          "Only works on analyzing competitor AI products"
+        ],
+        correctAnswer: 1,
+        explanation: "AI Product Analysts use data to understand how AI products perform and how users interact with them. They identify what's working, what isn't, and what needs to change. They help product teams make data-driven decisions about AI features. Pay range: $65-110K+.",
+        blindsAnalogy: "An AI Product Analyst is like someone who reviews completed installations across the company: Which products had the most callbacks? Where are customers most satisfied? Which install processes take longest? They use data to improve the product and process."
+      },
+      {
+        question: "What is the salary range for an AI Ethics/Safety Analyst?",
+        options: [
+          "$25,000-40,000",
+          "$70,000-120,000+",
+          "$200,000-500,000",
+          "These roles are volunteer-only"
+        ],
+        correctAnswer: 1,
+        explanation: "AI Ethics/Safety Analysts evaluate AI systems for bias, safety, and compliance. The pay range is approximately $70-120K+, reflecting the growing importance of responsible AI practices and increasing regulatory requirements.",
+        blindsAnalogy: "AI Ethics/Safety Analysts are like the building code inspectors of the AI world — they review systems against standards, flag potential issues, and require fixes before deployment. As AI regulations increase (like the EU AI Act), these roles become more important and better compensated."
+      },
+      {
+        question: "Which AI role is often considered the most accessible entry point for someone switching careers?",
+        options: [
+          "AI Research Scientist",
+          "AI Trainer / Data Annotator — it requires attention to detail and domain knowledge rather than programming skills",
+          "Machine Learning Engineer",
+          "Chief AI Officer"
+        ],
+        correctAnswer: 1,
+        explanation: "AI Trainer / Data Annotator roles value domain expertise, attention to detail, and the ability to make quality judgments — skills that directly transfer from trades work. Many positions don't require a technical degree. Pay range: $40-80K+ with room to grow into senior roles.",
+        blindsAnalogy: "Starting as an AI Trainer is like how many installers started — as a helper on a crew, learning by doing, building expertise through hands-on work rather than classroom theory. You use your existing skills (attention to detail, quality judgment) while learning the AI domain."
+      },
+      {
+        question: "What skills should someone develop to prepare for AI career roles?",
+        options: [
+          "Only advanced programming in Python and C++",
+          "A combination of AI literacy, data literacy, communication skills, critical thinking, domain expertise, and familiarity with AI tools — coding is helpful but not always required",
+          "Only sales and marketing skills",
+          "Nothing — the AI will train you"
+        ],
+        correctAnswer: 1,
+        explanation: "A well-rounded AI career preparation includes: understanding how AI works (literacy, not engineering), data skills (understanding data quality, bias, datasets), communication (explaining technical concepts simply), critical thinking (evaluating AI outputs), and hands-on familiarity with AI tools.",
+        blindsAnalogy: "Preparing for an AI career is like how you became a skilled installer: you needed product knowledge, measurement skills, customer communication, problem-solving ability, and hands-on experience with the tools. You didn't need to become a window manufacturer — you needed to be an expert user and communicator."
+      },
+      {
+        question: "What is 'AI Quality Assurance'?",
+        options: [
+          "Making sure AI hardware passes manufacturing quality checks",
+          "Testing AI outputs for accuracy, consistency, safety, and reliability — ensuring the AI produces trustworthy results before and after deployment",
+          "A certification program for AI products",
+          "Quality control for AI training data only"
+        ],
+        correctAnswer: 1,
+        explanation: "AI QA specialists test AI systems the way QA testers test software: Does the AI give accurate answers? Is it consistent? Does it handle edge cases? Does it ever produce harmful content? They design test cases, track quality metrics, and flag problems. Pay range: $50-90K+.",
+        blindsAnalogy: "AI QA is like your final quality check on every installation: Are the blinds level? Do they operate smoothly? Is the spacing even? Does anything stick or bind? Do the motorized ones respond to the remote consistently? The QA specialist checks that the AI's 'installations' meet quality standards."
+      },
+      {
+        question: "How do you explain your non-traditional background as a strength in an AI job interview?",
+        options: [
+          "Don't mention it — pretend you have a tech background",
+          "Frame your trade experience as directly relevant: precision, customer communication, troubleshooting, quality assessment, and real-world problem-solving are exactly what AI teams need",
+          "Say you're still learning and probably underqualified",
+          "Only talk about your desire to change careers"
+        ],
+        correctAnswer: 1,
+        explanation: "Your trade experience is a genuine asset: you solve problems under pressure, communicate technical concepts to non-technical people, maintain quality standards, assess edge cases, and iterate until things work. These skills are harder to teach than AI tools — and AI companies know it.",
+        blindsAnalogy: "You'd frame it the same way you'd pitch to a commercial client: 'I bring 10 years of field experience solving real problems in real time. I can assess quality, communicate with anyone from a building manager to a tenant, and I know that the gap between theory and reality is where the real work happens. AI teams have plenty of people who understand the theory — they need people who understand the gap.'"
+      },
+      {
+        question: "What is a 'portfolio' in the context of applying for AI roles?",
+        options: [
+          "A financial investment portfolio",
+          "A collection of work samples demonstrating your AI skills — projects, analyses, certifications, and examples of AI tools you've used and what you accomplished with them",
+          "A physical folder of printed resumes",
+          "A portfolio is only needed for design roles"
+        ],
+        correctAnswer: 1,
+        explanation: "An AI portfolio shows what you can do: examples of prompt engineering, AI tool comparisons, data analysis projects, scenario analyses, certifications completed, and any AI solutions you've built or contributed to. It's proof of capability, not just claimed experience.",
+        blindsAnalogy: "An AI portfolio is like your project portfolio for landing commercial contracts: photos of completed work, client testimonials, certifications, and descriptions of complex projects you've handled. You don't just say you can do the job — you show evidence that you have."
+      },
+      {
+        question: "Which AI certifications are considered most valuable for non-technical roles?",
+        options: [
+          "Only PhDs in machine learning count",
+          "Practical certifications that demonstrate AI literacy and tool proficiency — such as Google's AI Essentials, AWS AI Practitioner, or Coursera AI specializations",
+          "No certifications exist for non-technical AI roles",
+          "Only vendor-specific certifications from OpenAI"
+        ],
+        correctAnswer: 1,
+        explanation: "Certifications from Google, AWS, IBM, Microsoft, and platforms like Coursera, edX, and DeepLearning.AI demonstrate AI literacy without requiring engineering depth. Focus on practical, industry-recognized certifications that show you understand AI concepts and can use AI tools.",
+        blindsAnalogy: "Choosing the right AI certifications is like choosing trade certifications: a general contractor license opens more doors than a single manufacturer's installation certificate. Get broad industry-recognized credentials first, then specialize based on the roles you're targeting."
+      },
+      {
+        question: "What is the job market outlook for non-engineering AI roles?",
+        options: [
+          "These roles are shrinking as AI becomes more automated",
+          "Growing rapidly — companies are realizing they need people who understand AI AND can communicate with non-technical stakeholders, creating strong demand for hybrid skill sets",
+          "The market is completely saturated",
+          "Only big tech companies hire for these roles"
+        ],
+        correctAnswer: 1,
+        explanation: "Non-engineering AI roles are among the fastest-growing job categories. As AI adoption increases, companies need trainers, prompt engineers, ethics analysts, QA testers, consultants, and product analysts. The technical side is only half the equation — the human side is equally critical.",
+        blindsAnalogy: "The AI job market is like the blind industry when motorized systems took off: suddenly you needed people who understood both the traditional craft AND the new technology, who could explain it to customers, troubleshoot the integration, and manage the transition. The people with hybrid skills were the most valuable."
+      },
+      {
+        question: "A company posts a job for 'AI Operations Specialist' requiring '2+ years experience with ML pipelines.' You have 0 years in AI but 10 years installing blinds. Should you apply?",
+        options: [
+          "No — you must meet every listed requirement exactly",
+          "Yes — job postings are wish lists, and your transferable skills (operations management, troubleshooting, quality control, customer communication) are genuinely valuable. Apply with a strong cover letter bridging your experience to their needs.",
+          "Only if you lie about having ML pipeline experience",
+          "No — career switching is impossible"
+        ],
+        correctAnswer: 1,
+        explanation: "Job postings list ideal candidates, not minimum requirements. Your operations experience (managing installs, troubleshooting systems, quality assurance, customer-facing work) directly transfers. A strong application that honestly bridges your experience to their needs can stand out from generic AI applicants.",
+        blindsAnalogy: "This is like bidding on a commercial job that asks for 'experience with automated blind systems.' You may not have installed that exact system, but your decade of installation experience, understanding of mounting systems, and ability to learn new products makes you a stronger candidate than someone who read about motorized blinds but never held a drill."
+      },
+      {
+        question: "What is the single most important thing for transitioning into an AI career from a non-technical background?",
+        options: [
+          "Getting a 4-year computer science degree",
+          "Memorizing every AI algorithm",
+          "Building genuine AI literacy through self-study, hands-on practice with AI tools, and creating a portfolio that demonstrates your understanding and capabilities",
+          "Waiting for someone to offer you a role"
+        ],
+        correctAnswer: 2,
+        explanation: "Active self-education is the key: study AI concepts (this course!), practice with AI tools, build projects that demonstrate your skills, earn relevant certifications, and network in AI communities. Nobody will hand you a career change — but the path is absolutely accessible for self-starters.",
+        blindsAnalogy: "Transitioning to AI is like how you probably learned the blind trade: you didn't wait for a university degree — you learned on the job, studied on your own, got certified, and built your reputation through demonstrated skill. The AI career path works the same way for self-motivated learners."
+      },
+      {
+        question: "How should you position window blind installation experience on an AI-focused resume?",
+        options: [
+          "Don't mention it — hide your trade background",
+          "Translate specific skills into AI-relevant language: 'precision measurement and quality assurance,' 'client needs assessment and technical communication,' 'field operations and process optimization'",
+          "List every blind you've ever installed",
+          "Only mention it as a hobby"
+        ],
+        correctAnswer: 1,
+        explanation: "Translate your experience into business/AI language: 'Conducted 5,000+ precision measurement and quality assessments,' 'Managed client technical consultations translating requirements into specifications,' 'Optimized field operations processes reducing installation time by 25%.' The skills are real — frame them professionally.",
+        blindsAnalogy: "It's the same principle as when you bid on commercial jobs: you don't say 'I put up blinds in houses.' You say 'Managed residential and commercial window treatment installations, including motorized systems, coordinating with general contractors, building management, and end users.' Same experience, professional framing."
+      },
+      {
+        question: "What is the most common mistake people make when trying to break into AI careers?",
+        options: [
+          "Starting too early",
+          "Focusing only on technical skills (trying to learn programming) while ignoring the communication, business, and domain expertise skills that non-engineering AI roles actually need",
+          "Applying to too many jobs",
+          "Being too confident in interviews"
+        ],
+        correctAnswer: 1,
+        explanation: "The biggest mistake is thinking you need to become an engineer. Many AI roles need people who can communicate, evaluate, test, train, consult, and manage — not code. Invest in understanding AI deeply and developing the human skills that make you valuable, rather than spending years trying to become a developer.",
+        blindsAnalogy: "It's like a skilled installer thinking they need an engineering degree to become a sales consultant for a blind manufacturer. They don't — they need to understand the products, communicate with customers and architects, and solve problems. Their field experience is more valuable than an engineering degree for that role."
       }
     ]
   },
