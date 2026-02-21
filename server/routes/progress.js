@@ -70,14 +70,14 @@ router.post('/flashcard', (req, res) => {
 
     // Spaced repetition intervals (in hours): box 1=4h, 2=8h, 3=24h, 4=72h, 5=168h
     const intervals = { 1: 4, 2: 8, 3: 24, 4: 72, 5: 168 };
-    const hoursUntilReview = intervals[newBox];
+    const hoursUntilReview = intervals[newBox] || 4;
 
     db.prepare(
       `UPDATE flashcard_progress SET box = ?, times_reviewed = times_reviewed + 1,
        times_correct = times_correct + ?, last_reviewed = CURRENT_TIMESTAMP,
-       next_review = datetime('now', '+${hoursUntilReview} hours')
+       next_review = datetime('now', ? || ' hours')
        WHERE card_id = ?`
-    ).run(newBox, correct ? 1 : 0, card_id);
+    ).run(newBox, correct ? 1 : 0, `+${hoursUntilReview}`, card_id);
   } else {
     db.prepare(
       `INSERT INTO flashcard_progress (card_id, box, times_reviewed, times_correct, last_reviewed, next_review)
