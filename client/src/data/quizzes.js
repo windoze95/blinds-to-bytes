@@ -3246,6 +3246,18 @@ export const quizzes = [
         correctAnswer: 1,
         explanation: "The biggest mistake is thinking you need to become an engineer. Many AI roles need people who can communicate, evaluate, test, train, consult, and manage — not code. Invest in understanding AI deeply and developing the human skills that make you valuable, rather than spending years trying to become a developer.",
         blindsAnalogy: "It's like a skilled installer thinking they need an engineering degree to become a sales consultant for a blind manufacturer. They don't — they need to understand the products, communicate with customers and architects, and solve problems. Their field experience is more valuable than an engineering degree for that role."
+      },
+      {
+        question: "What is 'networking' in the context of an AI career transition, and why does it matter?",
+        options: [
+          "Setting up computer networks and Wi-Fi routers",
+          "Building professional relationships in AI communities — attending meetups, joining online groups, connecting with AI professionals on LinkedIn, and contributing to discussions — because most opportunities come through relationships, not job boards",
+          "Only adding people on social media without engaging",
+          "Networking is outdated and irrelevant in the AI industry"
+        ],
+        correctAnswer: 1,
+        explanation: "Professional networking in AI means actively participating in communities: attending local AI meetups, joining Discord/Slack groups, commenting thoughtfully on LinkedIn, contributing to open discussions, and building genuine relationships. Many AI roles are filled through referrals and connections, not just applications.",
+        blindsAnalogy: "Networking for AI careers is like how you build relationships in the trades: you connect with general contractors, interior designers, property managers, and other installers. Jobs come through who knows you and trusts your work. The AI world works the same way — show up, contribute, be helpful, and opportunities follow."
       }
     ]
   },
