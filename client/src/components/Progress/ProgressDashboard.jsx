@@ -13,6 +13,7 @@ import {
   CheckCircle2,
 } from 'lucide-react';
 import { useApp } from '../../context/AppContext.jsx';
+import apiFetch from '../../utils/apiFetch.js';
 
 const SECTION_NAMES = [
   'What Even Is AI?',
@@ -50,7 +51,7 @@ export default function ProgressDashboard() {
     try {
       const results = [];
       for (let s = 1; s <= 14; s++) {
-        const res = await fetch(`/api/progress/quiz/${s}`);
+        const res = await apiFetch(`/api/progress/quiz/${s}`);
         if (res.ok) {
           const data = await res.json();
           if (data.length > 0) results.push(...data);
@@ -64,7 +65,7 @@ export default function ProgressDashboard() {
 
   const fetchInterviews = async () => {
     try {
-      const res = await fetch('/api/progress/interviews');
+      const res = await apiFetch('/api/progress/interviews');
       if (res.ok) {
         const data = await res.json();
         setInterviewHistory(data);

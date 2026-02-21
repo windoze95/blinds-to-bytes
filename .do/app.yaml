@@ -1,0 +1,31 @@
+name: blinds-to-bytes
+region: nyc
+services:
+  - name: web
+    dockerfile_path: Dockerfile
+    github:
+      repo: windoze95/blinds-to-bytes
+      branch: main
+      deploy_on_push: true
+    instance_size_slug: basic-xxs
+    instance_count: 1
+    http_port: 3001
+    envs:
+      - key: ANTHROPIC_API_KEY
+        scope: RUN_TIME
+        type: SECRET
+      - key: AUTH_USERNAME
+        scope: RUN_TIME
+        type: SECRET
+      - key: AUTH_PASSWORD
+        scope: RUN_TIME
+        type: SECRET
+      - key: JWT_SECRET
+        scope: RUN_TIME
+        type: SECRET
+      - key: DATABASE_PATH
+        scope: RUN_TIME
+        value: /data/progress.db
+      - key: NODE_ENV
+        scope: RUN_TIME
+        value: production

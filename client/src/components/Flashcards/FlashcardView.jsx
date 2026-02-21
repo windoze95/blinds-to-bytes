@@ -1,6 +1,7 @@
 import { useState, useMemo, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { useApp } from '../../context/AppContext.jsx';
+import apiFetch from '../../utils/apiFetch.js';
 import { flashcards } from '../../data/flashcards.js';
 import {
   RotateCcw,
@@ -153,7 +154,7 @@ export default function FlashcardView() {
 
     // Persist to server
     try {
-      await fetch('/api/progress/flashcard', {
+      await apiFetch('/api/progress/flashcard', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ card_id: card.id, correct: difficulty !== 'hard' }),

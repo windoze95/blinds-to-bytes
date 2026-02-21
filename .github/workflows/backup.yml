@@ -1,0 +1,39 @@
+name: Daily Backup
+
+on:
+  schedule:
+    - cron: '0 2 * * *' # Daily at 2am UTC
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Login and get token
+        id: auth
+        run: |
+          token=$(curl -sf -X POST "${{ secrets.APP_URL }}/api/auth/login" \
+            -H "Content-Type: application/json" \
+            -d "{\"username\":\"${{ secrets.AUTH_USERNAME }}\",\"password\":\"${{ secrets.AUTH_PASSWORD }}\"}" \
+            | jq -r '.token')
+          if [ "$token" = "null" ] || [ -z "$token" ]; then
+            echo "Login failed"
+            exit 1
+          fi
+          echo "token=$token" >> "$GITHUB_OUTPUT"
+
+      - name: Export data
+        run: |
+          date=$(date +%Y-%m-%d)
+          curl -sf "${{ secrets.APP_URL }}/api/data/export" \
+            -H "Authorization: Bearer ${{ steps.auth.outputs.token }}" \
+            -o "blinds-to-bytes-backup-${date}.json"
+          echo "Backup size: $(wc -c < "blinds-to-bytes-backup-${date}.json") bytes"
+
+      - name: Upload backup artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: backup-${{ github.run_id }}
+          path: blinds-to-bytes-backup-*.json
+          retention-days: 90

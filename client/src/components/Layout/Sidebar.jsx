@@ -6,7 +6,7 @@ import {
   ChevronRight,
   Lightbulb,
   Brain,
-  Database,
+  Database as DatabaseIcon,
   Network,
   MessageSquare,
   Eye,
@@ -29,7 +29,7 @@ import {
 const sectionIcons = [
   Lightbulb, // 1 - What Even Is AI?
   Brain, // 2 - How Machines Learn
-  Database, // 3 - Data
+  DatabaseIcon, // 3 - Data
   Network, // 4 - Neural Networks
   MessageSquare, // 5 - Language AI
   Eye, // 6 - Vision AI
@@ -332,6 +332,20 @@ export default function Sidebar({ open, onClose }) {
               </div>
             );
           })}
+          {/* Data Backup link */}
+          <div className="mt-4 pt-4 border-t border-surface-700">
+            <button
+              onClick={() => {
+                navigate('/settings');
+                if (onClose) onClose();
+              }}
+              className="w-full flex items-center gap-2.5 px-3 py-2.5 rounded-lg text-left
+                transition-colors text-gray-300 hover:bg-surface-800 hover:text-gray-100"
+            >
+              <DatabaseIcon size={16} className="text-gray-500 shrink-0" />
+              <span className="text-sm font-medium">Data Backup</span>
+            </button>
+          </div>
         </nav>
       </aside>
     </>

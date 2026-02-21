@@ -1,5 +1,6 @@
 import { useCallback } from 'react';
 import { useApp } from '../context/AppContext.jsx';
+import apiFetch from '../utils/apiFetch.js';
 
 export function useProgress() {
   const { state, dispatch } = useApp();
@@ -13,7 +14,7 @@ export function useProgress() {
       });
 
       try {
-        await fetch('/api/progress', {
+        await apiFetch('/api/progress', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ section, activity_type, activity_id, status, score, time_spent_seconds, notes }),
@@ -44,7 +45,7 @@ export function useProgress() {
       });
 
       try {
-        await fetch('/api/progress/flashcard', {
+        await apiFetch('/api/progress/flashcard', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ card_id: cardId, correct }),
@@ -58,7 +59,7 @@ export function useProgress() {
 
   const saveQuiz = useCallback(async ({ section, quiz_id, answers, score, time_spent_seconds }) => {
     try {
-      await fetch('/api/progress/quiz', {
+      await apiFetch('/api/progress/quiz', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ section, quiz_id, answers, score, time_spent_seconds }),
@@ -70,7 +71,7 @@ export function useProgress() {
 
   const saveInterview = useCallback(async ({ interview_type, transcript, ai_feedback, duration_seconds }) => {
     try {
-      const res = await fetch('/api/progress/interview', {
+      const res = await apiFetch('/api/progress/interview', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ interview_type, transcript, ai_feedback, duration_seconds }),

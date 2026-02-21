@@ -1,4 +1,5 @@
 import { useState, useCallback } from 'react';
+import apiFetch from '../utils/apiFetch.js';
 
 export function useAI() {
   const [loading, setLoading] = useState(false);
@@ -8,7 +9,7 @@ export function useAI() {
     setLoading(true);
     setError(null);
     try {
-      const res = await fetch('/api/ai/chat', {
+      const res = await apiFetch('/api/ai/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ messages, mode }),
@@ -31,7 +32,7 @@ export function useAI() {
     setLoading(true);
     setError(null);
     try {
-      const res = await fetch('/api/ai/review', {
+      const res = await apiFetch('/api/ai/review', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ work, context, mode }),
@@ -54,7 +55,7 @@ export function useAI() {
     setLoading(true);
     setError(null);
     try {
-      const res = await fetch('/api/ai/interview', {
+      const res = await apiFetch('/api/ai/interview', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ messages, interviewType }),

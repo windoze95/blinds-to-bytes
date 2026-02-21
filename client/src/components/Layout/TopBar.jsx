@@ -5,6 +5,8 @@ import {
   MessageCircle,
   Menu,
   BarChart3,
+  Settings,
+  LogOut,
 } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
@@ -85,6 +87,27 @@ export default function TopBar({ onMenuToggle }) {
             title="Progress dashboard"
           >
             <BarChart3 size={18} />
+          </button>
+
+          <button
+            onClick={() => navigate('/settings')}
+            className="p-2 rounded-lg hover:bg-surface-700 text-gray-400 hover:text-gray-200 transition-colors"
+            aria-label="Settings"
+            title="Settings"
+          >
+            <Settings size={18} />
+          </button>
+
+          <button
+            onClick={() => {
+              localStorage.removeItem('btb_token');
+              dispatch({ type: 'LOGOUT' });
+            }}
+            className="p-2 rounded-lg hover:bg-surface-700 text-gray-400 hover:text-gray-200 transition-colors"
+            aria-label="Log out"
+            title="Log out"
+          >
+            <LogOut size={18} />
           </button>
 
           <button

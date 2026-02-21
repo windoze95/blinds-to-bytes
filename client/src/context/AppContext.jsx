@@ -1,4 +1,5 @@
 import { createContext, useContext, useReducer, useEffect } from 'react';
+import apiFetch from '../utils/apiFetch.js';
 
 const AppContext = createContext(null);
 
@@ -10,6 +11,9 @@ const initialState = {
   progress: {},
   flashcardProgress: {},
   loading: true,
+  isAuthenticated: false,
+  authChecking: true,
+  username: null,
 };
 
 function appReducer(state, action) {
@@ -46,6 +50,15 @@ function appReducer(state, action) {
       };
     case 'SET_LOADING':
       return { ...state, loading: action.payload };
+    case 'SET_AUTH':
+      return {
+        ...state,
+        isAuthenticated: action.payload.isAuthenticated,
+        username: action.payload.username,
+        authChecking: false,
+      };
+    case 'LOGOUT':
+      return { ...state, isAuthenticated: false, username: null, authChecking: false };
     default:
       return state;
   }
@@ -54,10 +67,49 @@ function appReducer(state, action) {
 export function AppProvider({ children }) {
   const [state, dispatch] = useReducer(appReducer, initialState);
 
+  // Auth verification
   useEffect(() => {
+    async function verifyAuth() {
+      const token = localStorage.getItem('btb_token');
+      if (!token) {
+        dispatch({ type: 'SET_AUTH', payload: { isAuthenticated: false, username: null } });
+        return;
+      }
+      try {
+        const res = await fetch('/api/auth/verify', {
+          headers: { Authorization: 'Bearer ' + token },
+        });
+        if (res.ok) {
+          const data = await res.json();
+          dispatch({ type: 'SET_AUTH', payload: { isAuthenticated: true, username: data.username } });
+        } else {
+          localStorage.removeItem('btb_token');
+          dispatch({ type: 'SET_AUTH', payload: { isAuthenticated: false, username: null } });
+        }
+      } catch {
+        localStorage.removeItem('btb_token');
+        dispatch({ type: 'SET_AUTH', payload: { isAuthenticated: false, username: null } });
+      }
+    }
+    verifyAuth();
+  }, []);
+
+  // Listen for auth:logout events from apiFetch
+  useEffect(() => {
+    function handleLogout() {
+      dispatch({ type: 'LOGOUT' });
+    }
+    window.addEventListener('auth:logout', handleLogout);
+    return () => window.removeEventListener('auth:logout', handleLogout);
+  }, []);
+
+  // Load progress only when authenticated
+  useEffect(() => {
+    if (!state.isAuthenticated) return;
+
     async function loadProgress() {
       try {
-        const res = await fetch('/api/progress');
+        const res = await apiFetch('/api/progress');
         if (res.ok) {
           const data = await res.json();
           dispatch({ type: 'SET_PROGRESS', payload: data.progress || {} });
@@ -70,7 +122,7 @@ export function AppProvider({ children }) {
       }
     }
     loadProgress();
-  }, []);
+  }, [state.isAuthenticated]);
 
   useEffect(() => {
     if (state.darkMode) {

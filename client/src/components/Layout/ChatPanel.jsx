@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { useApp } from '../../context/AppContext.jsx';
+import apiFetch from '../../utils/apiFetch.js';
 import { X, Send, Bot, User, Loader2 } from 'lucide-react';
 
 export default function ChatPanel() {
@@ -32,7 +33,7 @@ export default function ChatPanel() {
     setLoading(true);
 
     try {
-      const res = await fetch('/api/ai/chat', {
+      const res = await apiFetch('/api/ai/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
